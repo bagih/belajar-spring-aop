@@ -5,6 +5,8 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.3"
 	kotlin("jvm") version "1.8.22"
 	kotlin("plugin.spring") version "1.8.22"
+	kotlin("plugin.lombok") version "1.9.10"
+	id("io.freefair.lombok") version "8.1.0"
 }
 
 group = "com.bagih"
@@ -13,6 +15,7 @@ version = "0.0.1-SNAPSHOT"
 java {
 	sourceCompatibility = JavaVersion.VERSION_17
 }
+
 
 configurations {
 	compileOnly {
